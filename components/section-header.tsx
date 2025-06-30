@@ -5,7 +5,7 @@ import React from 'react'
 
 type SectionHeaderProps = {
   eyebrow?: string;
-  title: string;
+  title?: string;
   description?: string;
 };
 

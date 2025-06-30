@@ -10,8 +10,9 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaGoodreadsG } from "react-icons/fa";
 import { useSectionInView } from '@/lib/hooks';
-
+import { useActiveSectionContext } from '@/context/active-section-context';
 export default function Hero() {
+    const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
     const { ref } = useSectionInView('Home', 0.5);
 
     return (
@@ -51,7 +52,7 @@ export default function Hero() {
                             />
                         </h1>
                         <BlurText
-                            text="I'm a junior at the University of Minnesota studying Computer Science & Management! I develop full-stack solutions with a focus on real-world impact and responsible AI. Outside of code, you'll find me running through nature trails, creating music, or deep in a book!"
+                            text="I'm a junior at the University of Minnesota studying Computer Science & Management! I care about building tech that matters, with a focus on full-stack development and responsible AI. Outside of code, you'll find me running outside, cooking a new dish, or deep in a book!"
                             delay={40}
                             animateBy="words"
                             direction="top"
@@ -67,7 +68,11 @@ export default function Hero() {
                     >
                         <Link
                             href="#contact"
-                            className='group bg-[#f2998f] text-white text-md px-7 py-3 flex hover:bg-[#fcb1a9] items-center gap-2 rounded-full shadow-sm hover:shadow-md transition outline-none focus:scale-110 hover:scale-110 active:scale-105'>
+                            className='group bg-[#f2998f] text-white text-md px-7 py-3 flex hover:bg-[#fcb1a9] items-center gap-2 rounded-full shadow-sm hover:shadow-md transition outline-none focus:scale-110 hover:scale-110 active:scale-105'
+                            onClick={() => {
+                                setActiveSection("Contact");
+                                setTimeOfLastClick(Date.now());
+                            }}>
                             Contact <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
                         </Link>
 
