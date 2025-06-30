@@ -6,7 +6,6 @@ import acmWebsite from "@/public/acmWebsite.png";
 import { TbBrain } from "react-icons/tb";
 import { GoTelescope } from "react-icons/go";
 import { FaUniversity } from "react-icons/fa"
-import { IconType } from "react-icons/lib";
 
 export const links = [
   {
