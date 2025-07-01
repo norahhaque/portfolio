@@ -36,23 +36,23 @@ export default function Experience() {
             }}
             contentArrowStyle={{
               borderRight: "0.3rem solid #cbd1cb",
-            }}
-            date={item.date}
-            icon={item.icon}
-            iconStyle={{
-              background: "white",
-              fontSize: "1rem",
-              color: "#e8a89b",
-              transform: "scale(0.85)",
-            }}
-          >
-            <h2 className="font-semibold text-stone-800 capitalize text-[0.95rem] leading-tight">
-              {item.title}
-            </h2>
-            <h1 className="font-light text-[0.9rem] text-stone-700 !mt-2 leading-snug">
-              {item.description}
-            </h1>
-          </VerticalTimelineElement>
+                  }}
+                  date={item.date}
+                  icon={item.icon}
+                  iconStyle={{
+                      background: "white",
+                      fontSize: "1rem",
+                      color: "#e8a89b",
+                      transform: "scale(0.85)",
+                  }}
+              >
+                  <h3 className="font-semibold text-stone-800 capitalize leading-tight">
+                      {item.title}
+                  </h3>
+                  <h1 className="font-light text-[0.9rem] text-stone-700 !mt-2 leading-snug">
+                      {item.description}
+                  </h1>
+              </VerticalTimelineElement>
         </React.Fragment>
       ))}
     </VerticalTimeline>
