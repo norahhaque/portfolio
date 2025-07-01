@@ -61,7 +61,7 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "ACMW Chapter Website",
+    title: "ACMW Chapter Website [Ongoing]",
     description:
       "A full-stack web platform for the UMN ACMW chapter. Features interactive community features with modern animations and responsive design.",
     tags: ["Next.js", "React", "MongoDB", "Tailwind", "Prisma", "TypeScript", "Framer Motion"],
