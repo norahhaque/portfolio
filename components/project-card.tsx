@@ -36,7 +36,7 @@ export default function ProjectCard({
         opacity: opacityProgress,
       }}
     >
-      <section className="bg-[#dbddd3] max-w-[22rem] border border-black/5 rounded-lg overflow-hidden sm:pr-6 relative transition sm:group-even:pl-6 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+      <section className="bg-[#dbddd3] sm:max-w-[36rem] max-w-[20rem] border border-black/5 rounded-lg overflow-hidden sm:pr-6 relative transition sm:group-even:pl-6 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="w-full bg-[#dbddd3] pt-3 pb-6 px-4 sm:pl-8 sm:pr-2 sm:pt-8 sm:max-w-[45%] flex flex-col h-full sm:group-even:ml-[15rem]">
           <h3 className="text-xl font-semibold text-stone-700">{title}</h3>
           <p className="mt-1.5 mb-3 text-sm leading-relaxed text-stone-700">
