@@ -1,16 +1,14 @@
-"use client"
+"use client";
 
-import React, { useRef } from 'react'
-import Image from 'next/image';
-import { projectsData } from '@/lib/data';
+import React, { useRef } from "react";
+import Image from "next/image";
+import { projectsData } from "@/lib/data";
 import { GoArrowUpRight } from "react-icons/go";
-import BlurText from './ui/BlurText';
-import { useScroll, useTransform } from 'framer-motion';
-import { motion } from "motion/react"
-
+import BlurText from "./ui/BlurText";
+import { useScroll, useTransform } from "framer-motion";
+import { motion } from "motion/react";
 
 type ProjectProps = typeof projectsData[number];
-
 
 export default function ProjectCard({
   title,
@@ -23,28 +21,31 @@ export default function ProjectCard({
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0 1", "1.33 1"]
+    offset: ["0 1", "1.33 1"],
   });
 
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
-    <motion.div className="group mb-3 sm:mb-8 last:mb-0" ref={ref}   
-    style={{
+    <motion.div
+      className="group mb-2 sm:mb-6 last:mb-0"
+      ref={ref}
+      style={{
         scale: scaleProgress,
         opacity: opacityProgress,
-      }}>
-      <section className="bg-[#dbddd3] max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 mb-4 leading-relaxed text-gray-700 dark:text-white/70">
+      }}
+    >
+      <section className="bg-[#dbddd3] max-w-[36rem] border border-black/5 rounded-lg overflow-hidden sm:pr-6 relative transition sm:group-even:pl-6 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+        <div className="pt-3 pb-6 px-4 sm:pl-8 sm:pr-2 sm:pt-8 sm:max-w-[45%] flex flex-col h-full sm:group-even:ml-[15rem]">
+          <h3 className="text-xl font-semibold">{title}</h3>
+          <p className="mt-1.5 mb-3 text-sm leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+          <ul className="flex flex-wrap mt-3 gap-1.5 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
-                className="bg-[#243522]/[0.9] px-3 py-1 text-[0.6rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                className="bg-[#243522]/[0.9] px-2.5 py-0.5 text-[0.55rem] uppercase tracking-wide text-white rounded-full dark:text-white/70"
                 key={index}
               >
                 <BlurText
@@ -57,7 +58,7 @@ export default function ProjectCard({
             ))}
           </ul>
           <a href={link} target="_blank">
-            <button className='bg-white text-slate-900 h-8 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 hover:bg-slate-100'>
+            <button className="bg-white text-slate-900 h-7 w-full rounded-lg font-medium text-sm inline-flex items-center justify-center gap-2 mt-6 hover:bg-slate-100">
               <span>Check Out Here</span>
               <GoArrowUpRight />
             </button>
@@ -68,12 +69,12 @@ export default function ProjectCard({
           src={imageUrl}
           alt="Project I built"
           quality={95}
-          className="absolute hidden sm:block top-15 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition 
-          group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2
-          group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2
-          group-even:right-[initial] group-even:-left-40"
+          className="absolute hidden sm:block top-14 -right-36 w-[22rem] rounded-t-lg shadow-2xl transition 
+          group-hover:scale-[1.04] group-hover:-translate-x-2.5 group-hover:translate-y-2.5 group-hover:-rotate-2
+          group-even:group-hover:translate-x-2.5 group-even:group-hover:translate-y-2.5 group-even:group-hover:rotate-2
+          group-even:right-[initial] group-even:-left-36"
         />
       </section>
     </motion.div>
-    );
+  );
 }
