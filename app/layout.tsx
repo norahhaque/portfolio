@@ -39,10 +39,12 @@ export default function RootLayout({
         <div className="bg-[#9ca383]/80 absolute top-[-4vh] right-[-4vw] h-[60vh] w-[60vw] rounded-full blur-[16rem] -z-10" />
         <div className="bg-white absolute top-[-4vh] left-[-4vw] h-[60vh] w-[60vw] rounded-full blur-[12rem] -z-10" />
         <ActiveSectionContextProvider>
-          <Header />
-          {children}
-          <Footer />
-          <Toaster position="top-right"/> 
+          <div className="overflow-x-hidden">
+            <Header />
+            {children}
+            <Footer />
+            <Toaster position="top-right" />
+          </div>
         </ActiveSectionContextProvider>
       </body>
     </html>
