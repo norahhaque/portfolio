@@ -57,6 +57,7 @@ export default function ProjectCard({
               </li>
             ))}
           </ul>
+
           <a href={link} target="_blank">
             <button className="bg-white text-slate-900 h-7 w-full rounded-lg font-medium text-sm inline-flex items-center justify-center gap-2 mt-6 hover:bg-slate-100">
               <span>Check Out Here</span>
@@ -65,15 +66,18 @@ export default function ProjectCard({
           </a>
         </div>
 
-        <Image
-          src={imageUrl}
-          alt="Project I built"
-          quality={95}
-          className="absolute hidden sm:block top-14 -right-36 w-[22rem] rounded-t-lg shadow-2xl transition 
-          group-hover:scale-[1.04] group-hover:-translate-x-2.5 group-hover:translate-y-2.5 group-hover:-rotate-2
-          group-even:group-hover:translate-x-2.5 group-even:group-hover:translate-y-2.5 group-even:group-hover:rotate-2
-          group-even:right-[initial] group-even:-left-36"
-        />
+ <Image
+  src={imageUrl}
+  alt="Project I built"
+  quality={95}
+   className="
+    block mx-auto h-[14rem] w-full object-cover sm:h-auto sm:w-[22rem]
+    sm:absolute sm:block sm:top-14 sm:-right-36 sm:rounded-t-lg sm:shadow-2xl transition
+    sm:group-hover:scale-[1.04] sm:group-hover:-translate-x-2.5 sm:group-hover:translate-y-2.5 sm:group-hover:-rotate-2
+    sm:group-even:group-hover:translate-x-2.5 sm:group-even:group-hover:translate-y-2.5 sm:group-even:group-hover:rotate-2
+    sm:group-even:right-[initial] sm:group-even:-left-36
+  "
+/>
       </section>
     </motion.div>
   );
