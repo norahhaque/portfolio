@@ -88,10 +88,10 @@ export const projectsData = [
   {
     title: "Spam Message Detection",
     description:
-      "Built a spam classifier using SMS data with K-Means clustering, PCA, and KNN",
-    tags: ["Python", "scikit-learn", "NLTK", "Pandas", "Matplotlib"],
+      "Built an AI-powered SMS spam classifier using TF-IDF, PCA, and KNN, deployed with a full-stack FastAPI + React interface.",
+    tags: ["Python", "FastAPI", "scikit-learn", "NLTK", "React", "Tailwind CSS"],
     imageUrl: spamMessageDetection,
-    link: "https://github.com/norahhaque/spam-message-detection",
+    link: "https://spam-detection-iv7tq0who-norahs-projects-f56f9c6f.vercel.app/",
   },
 ] as const;
 
