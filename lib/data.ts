@@ -77,15 +77,6 @@ export const projectsData = [
     link: "https://github.com/norahhaque/lung-disease-detection-ml",
   },
   {
-    title: "Fake News Classifier",
-    description:
-      "Fake news classifier using KNN and MLP with TF-IDF, stemming, and SVD. Achieved 98% accuracy with early stopping.",
-    tags: ["TensorFlow", "Python", "Pandas", "scikit-learn"],
-    imageUrl: fakeNewsClassifier,
-    link: "https://github.com/norahhaque/fake-news-classifier",
-  },
-
-  {
     title: "Spam Message Detection",
     description:
       "Built an AI-powered SMS spam classifier using TF-IDF, PCA, and KNN, deployed with a full-stack FastAPI + React interface.",
