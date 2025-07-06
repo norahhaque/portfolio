@@ -82,7 +82,7 @@ export const projectsData = [
       "Built an AI-powered SMS spam classifier using TF-IDF, PCA, and KNN, deployed with a full-stack FastAPI + React interface.",
     tags: ["Python", "FastAPI", "scikit-learn", "NLTK", "React", "Tailwind CSS"],
     imageUrl: spamMessageDetection,
-    link: "https://spam-detection-iv7tq0who-norahs-projects-f56f9c6f.vercel.app/",
+    link: "https://spam-detection-puce.vercel.app/",
   },
 ] as const;
 
