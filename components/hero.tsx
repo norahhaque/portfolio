@@ -52,7 +52,7 @@ export default function Hero() {
                             />
                         </h1>
                         <BlurText
-                            text="I'm a junior at the University of Minnesota studying Computer Science & Management! I care about building tech that matters, with a focus on full-stack development and responsible AI. Outside of code, you'll find me running outside, cooking a new dish, or deep in a book!"
+                            text="I'm a junior at the University of Minnesota studying Computer Science & Management! I care about building tech that matters, with a focus on full-stack development and responsible AI. Outside of code, you'll find me involved in local politics, out on a run outside, or deep in a book!"
                             delay={40}
                             animateBy="words"
                             direction="top"
