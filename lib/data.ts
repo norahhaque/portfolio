@@ -1,40 +1,21 @@
+"use client";
+
 import React from "react";
-import lungDetection from "@/public/lung-classification.jpg";
-import fakeNewsClassifier from "@/public/fake_news_detection.png";
-import spamMessageDetection from "@/public/spam_detection.png";
-import acmWebsite from "@/public/acmWebsite.png";
 import { TbBrain } from "react-icons/tb";
 import { GoTelescope } from "react-icons/go";
-import { FaUniversity } from "react-icons/fa"
+import { FaUniversity } from "react-icons/fa";
 
+// Navigation links
 export const links = [
-  {
-    name: "Home",
-    hash: "#home",
-  },
-  {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Hobbies",
-    hash: "#hobbies",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
+  { name: "Home", hash: "#home" },
+  { name: "Projects", hash: "#projects" },
+  { name: "Skills", hash: "#skills" },
+  { name: "Experience", hash: "#experience" },
+  { name: "Hobbies", hash: "#hobbies" },
+  { name: "Contact", hash: "#contact" },
 ] as const;
 
-
+// Experiences
 export const experiencesData = [
   {
     title: "Machine Learning TA",
@@ -59,53 +40,77 @@ export const experiencesData = [
   },
 ] as const;
 
+// Projects
 export const projectsData = [
+  {
+    title: "SMIC Mobile App [Ongoing]",
+    description:
+      "Cross-platform app delivering real-time community events and prayer times, built with React Native, Expo, NativeWind, and Firebase.",
+    tags: [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "NativeWind",
+      "Firebase Authentication",
+      "Firestore",
+    ],
+    imageUrl: "/smicApp.png",
+    width: 400,
+    height: 400,
+    link: "https://github.com/norahhaque/smic-app",
+  },
   {
     title: "ACMW Chapter Website",
     description:
       "A full-stack web platform for the UMN ACMW chapter. Features interactive community features with modern animations and responsive design.",
     tags: ["Next.js", "React", "Tailwind", "TypeScript", "Framer Motion"],
-    imageUrl: acmWebsite,
+    imageUrl: "/acmWebsite.png",
+    width: 400,
+    height: 300,
     link: "https://acmw.umn.edu/",
   },
   {
     title: "Lung Disease Detection",
     description:
       "Lung X-ray classifier using PyTorch and scikit-learn with logistic regression, KNN, and a custom neural net for binary and multi-class diagnosis.",
-    tags: ["PyTorch", "Python", "scikit-learn", "NumPy", "MatplotLib"],
-    imageUrl: lungDetection,
+    tags: ["PyTorch", "Python", "scikit-learn", "NumPy", "Matplotlib"],
+    imageUrl: "/lung-classification.jpg",
+    width: 400,
+    height: 400,
     link: "https://github.com/norahhaque/lung-disease-detection-ml",
   },
   {
     title: "Spam Message Detection",
     description:
-      "Built an AI-powered SMS spam classifier using TF-IDF, PCA, and KNN, deployed with a full-stack FastAPI + React interface.",
+      "SMS spam classifier using TF-IDF, PCA, and KNN deployed with a full-stack FastAPI + React interface.",
     tags: ["Python", "FastAPI", "scikit-learn", "NLTK", "React", "Tailwind CSS"],
-    imageUrl: spamMessageDetection,
+    imageUrl: "/spam_detection.png",
+    width: 400,
+    height: 400,
     link: "https://spam-detection-puce.vercel.app/",
   },
 ] as const;
 
-export const skillsData = [
-  "Python",
-  "Java",
-  "C",
-  "Git",
-  "Docker",
-  "Linux",
-  "Bash",
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Express",
-  "PostgreSQL",
-  "REST APIs",
-  "PyTorch",
-  "scikit-learn",
-  "Pandas",
-  "NumPy",
-] as const;
+// Skills
+export const skillsData = {
+  Languages: [
+    "Python",
+    "Java",
+    "C",
+    "JavaScript",
+    "TypeScript",
+    "HTML",
+    "CSS",
+    "Bash",
+  ],
+
+  Frontend: ["React", "Next.js", "Tailwind CSS", "NativeWind", "Framer Motion"],
+
+  Backend: ["Node.js", "Express", "REST APIs", "GraphQL"],
+
+  Databases: ["PostgreSQL", "MongoDB", "Firebase Firestore"],
+
+  Devops: ["Git", "Docker", "Linux", "CI/CD"],
+
+  "Data Science": ["PyTorch", "scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
+} as const;

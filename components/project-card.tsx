@@ -16,6 +16,8 @@ export default function ProjectCard({
   tags,
   imageUrl,
   link,
+  width,
+  height,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -66,18 +68,20 @@ export default function ProjectCard({
           </a>
         </div>
 
- <Image
-  src={imageUrl}
-  alt="Project I built"
-  quality={95}
-   className="
+        <Image
+          src={imageUrl}
+          width={width}
+          height={height}
+          alt="Project I built"
+          quality={95}
+          className="
     block mx-auto h-[14rem] w-full object-cover sm:h-auto sm:w-[22rem]
     sm:absolute sm:block sm:top-14 sm:-right-36 sm:rounded-t-lg sm:shadow-2xl transition
     sm:group-hover:scale-[1.04] sm:group-hover:-translate-x-2.5 sm:group-hover:translate-y-2.5 sm:group-hover:-rotate-2
     sm:group-even:group-hover:translate-x-2.5 sm:group-even:group-hover:translate-y-2.5 sm:group-even:group-hover:rotate-2
     sm:group-even:right-[initial] sm:group-even:-left-36
   "
-/>
+        />
       </section>
     </motion.div>
   );
