@@ -59,7 +59,7 @@ export default function Hero() {
                             delay={40}
                             animateBy="words"
                             direction="top"
-                            className="text-sm text-stone-600 font-poppins text-center md:text-left"
+                            className="flex justify-center text-sm text-stone-600 font-poppins text-center md:justify-start md:text-left mx-3 md:mx-0"
                         />
                     </motion.div>
 
