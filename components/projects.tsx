@@ -10,22 +10,18 @@ import { useSectionInView } from "@/lib/hooks";
 export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.3);
   return (
-    <section ref={ref} id="projects" className="mt-[18rem] scroll-mt-10">
+    <section ref={ref} id="projects" className="mt-[18rem] scroll-mt-10 px-3 sm:px-6">
       <SectionHeader
         eyebrow="Ideas in Action"
         title="My Projects"
         description="These projects helped me grow by transforming ideas into practical solutions through code, ML, and design."
       />
-      <div>
+      <div className="flex flex-col items-center gap-8 mt-8">
         {projectsData.map((project, index) => (
-          <motion.div
-            key={index}
-            className="flex flex-col items-center gap-8 mt-8 group"
-          >
-            <ProjectCard {...project} />
-          </motion.div>
+          <ProjectCard key={index} {...project} />
         ))}
       </div>
     </section>
+
   );
 }

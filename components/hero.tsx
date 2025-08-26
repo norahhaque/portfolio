@@ -16,7 +16,11 @@ export default function Hero() {
     const { ref } = useSectionInView('Home', 0.5);
 
     return (
-        <section ref={ref} id="home" className="relative mt-30 px-3 sm:px-6 max-w-5xl mx-auto scroll-mt-48">
+        <section
+            ref={ref}
+            id="home"
+            className="relative mt-28 px-3 sm:px-4 max-w-5xl mx-auto scroll-mt-48"
+        >
             <div className="flex flex-col md:flex-row items-center justify-center gap-5">
 
                 <motion.div
@@ -67,7 +71,7 @@ export default function Hero() {
                     >
                         <Link
                             href="#contact"
-                            className='group bg-[#f2998f] text-white text-sm px-5 py-2 flex hover:bg-[#fcb1a9] items-center gap-2 rounded-full shadow-sm hover:shadow-md transition outline-none focus:scale-110 hover:scale-110 active:scale-105'
+                            className='group bg-[#f2998f] text-white text-sm px-5 py-2 flex hover:bg-[#fcb1a9] items-center gap-2 rounded-full shadow-sm hover:shadow-md transition outline-none focus:scale-110 hover:scale-110 active:scale-105 max-w-[90vw] truncate'
                             onClick={() => {
                                 setActiveSection("Contact");
                                 setTimeOfLastClick(Date.now());
@@ -77,7 +81,7 @@ export default function Hero() {
 
                         <a
                             href="/resume.pdf"
-                            className='group bg-white text-[#243522] border border-[#243522]/30 hover:border-[#243522]/60 text-sm px-5 py-2 flex items-center gap-2 rounded-full transition-all duration-200 shadow-sm outline-none focus:scale-110 hover:scale-110 active:scale-105'
+                            className='group bg-white text-[#243522] border border-[#243522]/30 hover:border-[#243522]/60 text-sm px-5 py-2 flex items-center gap-2 rounded-full transition-all duration-200 shadow-sm outline-none focus:scale-110 hover:scale-110 active:scale-105 max-w-[90vw] truncate'
                             download>
                             Resume <HiDownload className='opacity-60 group-hover:translate-y-1 transition' />
                         </a>
@@ -85,28 +89,29 @@ export default function Hero() {
                         <a
                             href="https://www.linkedin.com/in/norahhaque/"
                             target="_blank"
-                            className='bg-white text-[#243522] border border-[#243522]/30 hover:border-[#243522]/60 text-base p-3 flex items-center gap-2 rounded-full transition-all duration-200 shadow-sm outline-none focus:scale-110 hover:scale-110 active:scale-105'>
+                            className='bg-white text-[#243522] border border-[#243522]/30 hover:border-[#243522]/60 text-base p-3 flex items-center rounded-full transition-all duration-200 shadow-sm outline-none focus:scale-110 hover:scale-110 active:scale-105 shrink-0'
+                        >
                             <BsLinkedin />
                         </a>
 
                         <a
                             href="https://github.com/norahhaque"
                             target="_blank"
-                            className='bg-white text-[#243522] border border-[#243522]/30 hover:border-[#243522]/60 text-base p-3 flex items-center rounded-full transition-all duration-200 shadow-sm outline-none focus:scale-110 hover:scale-110 active:scale-105'>
+                            className='bg-white text-[#243522] border border-[#243522]/30 hover:border-[#243522]/60 text-base p-3 flex items-center rounded-full transition-all duration-200 shadow-sm outline-none focus:scale-110 hover:scale-110 active:scale-105 shrink-0'
+                        >
                             <FaGithubSquare />
                         </a>
 
                         <a
                             href="https://www.goodreads.com/norahhaque"
                             target="_blank"
-                            className='bg-white text-[#243522] border border-[#243522]/30 hover:border-[#243522]/60 text-base p-3 flex items-center rounded-full transition-all duration-200 shadow-sm outline-none focus:scale-110 hover:scale-110 active:scale-105'>
+                            className='bg-white text-[#243522] border border-[#243522]/30 hover:border-[#243522]/60 text-base p-3 flex items-center rounded-full transition-all duration-200 shadow-sm outline-none focus:scale-110 hover:scale-110 active:scale-105 shrink-0'
+                        >
                             <FaGoodreadsG />
                         </a>
-
                     </motion.div>
                 </div>
             </div>
         </section>
-
     );
 }

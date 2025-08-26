@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <header className="z-[999] relative">
-      <div className="fixed top-0 left-1/2 -translate-x-1/2 px-3 w-auto max-w-[92vw] w-fit sm:px-0 sm:top-4">
+      <div className="fixed top-0 left-1/2 -translate-x-1/2 px-3 max-w-[92vw] sm:px-0 sm:top-4">
         <motion.div
           className="absolute inset-0 h-full w-full sm:h-[2.9rem] sm:rounded-full border border-white/30 bg-white/50 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem]"
           initial={{ y: -100, opacity: 0 }}
@@ -66,7 +66,7 @@ export default function Header() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -5 }}
               transition={{ duration: 0.2 }}
-              className="absolute top-full mt-1.5 left-0 w-44 rounded-lg bg-white/90 backdrop-blur-md shadow-md p-3 flex flex-col items-start gap-2.5 text-[0.95rem] text-stone-600 z-[998]"
+              className="absolute top-full mt-1.5 left-0 w-44 max-w-[calc(100vw-1rem)] rounded-lg bg-white/90 backdrop-blur-md shadow-md p-3 flex flex-col items-start gap-2.5 text-[0.95rem] text-stone-600 z-[998]"
             >
               {links.map((link) => (
                 <li key={link.hash}>

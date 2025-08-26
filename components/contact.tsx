@@ -14,13 +14,14 @@ export default function Contact() {
     <motion.section
       ref={ref}
       id="contact"
-      className="scroll-mt-28 mb-16 sm:mb-24 mt-[16rem] w-[min(100%,26rem)] mx-auto"
+      className="scroll-mt-28 mb-16 sm:mb-24 mt-[16rem] w-[min(100%,26rem)] mx-auto px-3"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 2, ease: "easeOut" }}
       viewport={{ once: true }}
     >
       <SectionHeader eyebrow="Contact" title="Contact Me" />
+
       <p className="text-center text-sm font-light mt-3 max-w-[36rem] mx-auto text-stone-700 leading-snug">
         Get in touch with me directly at{" "}
         <a className="underline" href="mailto:norah.haque@gmail.com">
@@ -30,7 +31,7 @@ export default function Contact() {
       </p>
 
       <form
-        className="mt-8 flex flex-col items-center w-full px-4"
+        className="mt-8 flex flex-col items-center w-full"
         action={async formData => {
           const { error } = await sendEmail(formData);
           if (error) {

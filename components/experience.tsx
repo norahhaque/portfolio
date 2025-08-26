@@ -14,7 +14,7 @@ export default function Experience() {
     <section
   ref={ref}
   id="experience"
-  className="my-[10rem] scroll-mt-10 sm:mb-28 w-full px-6 sm:px-40"
+  className="my-[10rem] scroll-mt-10 sm:mb-28 w-full px-6 sm:px-20"
 >
   <div className="max-w-[42rem] mx-auto flex flex-col items-center text-center">
     <SectionHeader
@@ -24,7 +24,7 @@ export default function Experience() {
     />
   </div>
 
-  <div className="mt-12">
+  <div className="mt-12 overflow-x-hidden">
     <VerticalTimeline lineColor="#cbd1cb">
       {experiencesData.map((item, index) => (
         <React.Fragment key={index}>
@@ -36,27 +36,28 @@ export default function Experience() {
             }}
             contentArrowStyle={{
               borderRight: "0.3rem solid #cbd1cb",
-                  }}
-                  date={item.date}
-                  icon={item.icon}
-                  iconStyle={{
-                      background: "white",
-                      fontSize: "1rem",
-                      color: "#e8a89b",
-                      transform: "scale(0.85)",
-                  }}
-              >
-                  <h3 className="font-semibold text-stone-800 capitalize leading-tight">
-                      {item.title}
-                  </h3>
-                  <h1 className="font-light text-[0.9rem] text-stone-700 !mt-2 leading-snug">
-                      {item.description}
-                  </h1>
-              </VerticalTimelineElement>
+            }}
+            date={item.date}
+            icon={item.icon}
+            iconStyle={{
+              background: "white",
+              fontSize: "1rem",
+              color: "#e8a89b",
+              transform: "scale(0.85)",
+            }}
+          >
+            <h3 className="font-semibold text-stone-800 capitalize leading-tight">
+              {item.title}
+            </h3>
+            <h1 className="font-light text-[0.9rem] text-stone-700 !mt-2 leading-snug">
+              {item.description}
+            </h1>
+          </VerticalTimelineElement>
         </React.Fragment>
       ))}
     </VerticalTimeline>
   </div>
 </section>
+
   );
 }
