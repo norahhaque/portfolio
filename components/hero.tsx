@@ -1,15 +1,15 @@
 'use client';
 
-import Image from 'next/image';
-import { motion } from "motion/react";
-import { Typewriter } from 'react-simple-typewriter';
 import BlurText from "@/components/ui/BlurText";
+import { useActiveSectionContext } from '@/context/active-section-context';
+import { useSectionInView } from '@/lib/hooks';
+import { motion } from "motion/react";
+import Image from 'next/image';
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare, FaGoodreadsG } from "react-icons/fa";
-import { useSectionInView } from '@/lib/hooks';
-import { useActiveSectionContext } from '@/context/active-section-context';
+import { HiDownload } from "react-icons/hi";
+import { Typewriter } from 'react-simple-typewriter';
 
 export default function Hero() {
     const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
@@ -51,7 +51,7 @@ export default function Hero() {
                             />
                         </h1>
                         <BlurText
-                            text="I'm a junior at the University of Minnesota studying Computer Science & Management! I care about building tech that matters, with a focus on full-stack development and responsible AI. Outside of code, you'll find me involved in local politics, out on a run outside, or deep in a book!"
+                            text="I'm a junior at the University of Minnesota studying Computer Science & Management! I care about building tech that matters, with a focus on full-stack development and responsible AI. Outside of code, you'll find me volunteering at my local mosque, out on a run outside, or deep in a book!"
                             delay={40}
                             animateBy="words"
                             direction="top"
