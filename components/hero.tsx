@@ -47,7 +47,7 @@ export default function Hero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.2 }}
                     >
-                        <h1 className="text-2xl sm:text-3xl font-bold text-stone-700 font-poppins leading-snug mb-2">
+                        <h1 className="text-2xl sm:text-3xl font-bold text-[#4d3729] font-poppins leading-snug mb-2">
                             <Typewriter
                                 words={['Norah Haque']}
                                 loop={1}
@@ -59,7 +59,7 @@ export default function Hero() {
                             delay={40}
                             animateBy="words"
                             direction="top"
-                            className="flex justify-center text-sm text-stone-600 font-poppins text-center md:justify-start md:text-left mx-3 md:mx-0"
+                            className="flex justify-center text-sm text-[#4d3729] font-poppins text-center md:justify-start md:text-left mx-3 md:mx-0"
                         />
                     </motion.div>
 
@@ -71,7 +71,7 @@ export default function Hero() {
                     >
                         <Link
                             href="#contact"
-                            className='group bg-[#f2998f] text-white text-sm px-5 py-2 flex hover:bg-[#fcb1a9] items-center gap-2 rounded-full shadow-sm hover:shadow-md transition outline-none focus:scale-110 hover:scale-110 active:scale-105 max-w-[90vw] truncate'
+                            className='group bg-[#a94e43] text-white text-sm px-5 py-2 flex hover:bg-[#aa9381] items-center gap-2 rounded-full shadow-sm hover:shadow-md transition outline-none focus:scale-110 hover:scale-110 active:scale-105 max-w-[90vw] truncate'
                             onClick={() => {
                                 setActiveSection("Contact");
                                 setTimeOfLastClick(Date.now());
@@ -81,7 +81,7 @@ export default function Hero() {
 
                         <a
                             href="/resume.pdf"
-                            className='group bg-white text-[#243522] border border-[#243522]/30 hover:border-[#243522]/60 text-sm px-5 py-2 flex items-center gap-2 rounded-full transition-all duration-200 shadow-sm outline-none focus:scale-110 hover:scale-110 active:scale-105 max-w-[90vw] truncate'
+                            className='group bg-white text-[#4d3729] border border-[#8d7863]/30 hover:border-[#8d7863]/60 text-sm px-5 py-2 flex items-center gap-2 rounded-full transition-all duration-200 shadow-sm outline-none focus:scale-110 hover:scale-110 active:scale-105 max-w-[90vw] truncate'
                             download>
                             Resume <HiDownload className='opacity-60 group-hover:translate-y-1 transition' />
                         </a>
@@ -89,7 +89,7 @@ export default function Hero() {
                         <a
                             href="https://www.linkedin.com/in/norahhaque/"
                             target="_blank"
-                            className='bg-white text-[#243522] border border-[#243522]/30 hover:border-[#243522]/60 text-base p-3 flex items-center rounded-full transition-all duration-200 shadow-sm outline-none focus:scale-110 hover:scale-110 active:scale-105 shrink-0'
+                            className='bg-white text-[#4d3729] border border-[#8d7863]/30 hover:border-[#8d7863]/60 text-base p-3 flex items-center rounded-full transition-all duration-200 shadow-sm outline-none focus:scale-110 hover:scale-110 active:scale-105 shrink-0'
                         >
                             <BsLinkedin />
                         </a>
@@ -97,7 +97,7 @@ export default function Hero() {
                         <a
                             href="https://github.com/norahhaque"
                             target="_blank"
-                            className='bg-white text-[#243522] border border-[#243522]/30 hover:border-[#243522]/60 text-base p-3 flex items-center rounded-full transition-all duration-200 shadow-sm outline-none focus:scale-110 hover:scale-110 active:scale-105 shrink-0'
+                            className='bg-white text-[#4d3729] border border-[#8d7863]/30 hover:border-[#8d7863]/60 text-base p-3 flex items-center rounded-full transition-all duration-200 shadow-sm outline-none focus:scale-110 hover:scale-110 active:scale-105 shrink-0'
                         >
                             <FaGithubSquare />
                         </a>
@@ -105,7 +105,7 @@ export default function Hero() {
                         <a
                             href="https://www.goodreads.com/norahhaque"
                             target="_blank"
-                            className='bg-white text-[#243522] border border-[#243522]/30 hover:border-[#243522]/60 text-base p-3 flex items-center rounded-full transition-all duration-200 shadow-sm outline-none focus:scale-110 hover:scale-110 active:scale-105 shrink-0'
+                            className='bg-white text-[#4d3729] border border-[#8d7863]/30 hover:border-[#8d7863]/60 text-base p-3 flex items-center rounded-full transition-all duration-200 shadow-sm outline-none focus:scale-110 hover:scale-110 active:scale-105 shrink-0'
                         >
                             <FaGoodreadsG />
                         </a>

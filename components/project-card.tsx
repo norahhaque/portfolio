@@ -38,16 +38,16 @@ export default function ProjectCard({
         opacity: opacityProgress,
       }}
     >
-      <section className="bg-[#dbddd3] sm:max-w-[36rem] max-w-[20rem] border border-black/5 rounded-lg overflow-hidden sm:pr-6 relative transition sm:group-even:pl-6 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-        <div className="w-full bg-[#dbddd3] pt-3 pb-6 px-4 sm:pl-8 sm:pr-2 sm:pt-8 sm:max-w-[45%] flex flex-col h-full sm:group-even:ml-[15rem]">
-          <h3 className="text-xl font-semibold text-stone-700">{title}</h3>
-          <p className="mt-1.5 mb-3 text-sm leading-relaxed text-stone-700">
+      <section className="bg-[#e3d8cf] sm:max-w-[36rem] max-w-[20rem] border border-black/5 rounded-lg overflow-hidden sm:pr-6 relative transition sm:group-even:pl-6 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+        <div className="w-full bg-[#e3d8cf] pt-3 pb-6 px-4 sm:pl-8 sm:pr-2 sm:pt-8 sm:max-w-[45%] flex flex-col h-full sm:group-even:ml-[15rem]">
+          <h3 className="text-xl font-semibold text-[#4d3729]">{title}</h3>
+          <p className="mt-1.5 mb-3 text-sm leading-relaxed text-[#4d3729]">
             {description}
           </p>
           <ul className="flex flex-wrap mt-3 gap-1.5 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
-                className="bg-[#243522]/[0.9] px-2.5 py-0.5 text-[0.55rem] uppercase tracking-wide text-white rounded-full dark:text-white/70"
+                className="bg-[#8d7863] px-2.5 py-0.5 text-[0.55rem] uppercase tracking-wide text-white rounded-full dark:text-white/70"
                 key={index}
               >
                 <BlurText
@@ -61,7 +61,7 @@ export default function ProjectCard({
           </ul>
 
           <a href={link} target="_blank">
-            <button className="bg-white text-slate-900 h-7 w-full rounded-lg font-medium text-sm inline-flex items-center justify-center gap-2 mt-6 hover:bg-slate-100">
+            <button className="bg-[#a94e43] text-white h-7 w-full rounded-lg font-medium text-sm inline-flex items-center justify-center gap-2 mt-6 hover:bg-[#8d3d34] transition-colors">
               <span>Check Out Here</span>
               <GoArrowUpRight />
             </button>

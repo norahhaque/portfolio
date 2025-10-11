@@ -31,9 +31,9 @@ export default function Header() {
               >
                 <Link
                   className={clsx(
-                    "flex text-slate-800 items-center relative justify-center px-2.5 py-1.5 hover:text-white rounded-full hover:bg-[#959c92]/60 transition",
+                    "flex text-slate-800 items-center relative justify-center px-2.5 py-1.5 hover:text-white rounded-full hover:bg-[#cfbdb0]/80 transition",
                     {
-                      "bg-[#959c92]/60 text-white": activeSection === link.name,
+                      "bg-[#cfbdb0]/80 text-white": activeSection === link.name,
                     }
                   )}
                   href={link.hash}
@@ -53,7 +53,7 @@ export default function Header() {
       <div className="fixed top-2.5 left-2.5 flex items-center sm:hidden z-[1000]">
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="text-stone-600 hover:text-[#243522] text-[1.35rem] transition"
+          className="text-stone-600 hover:text-[#cfbdb0] text-[1.35rem] transition"
         >
           {menuOpen ? <HiX /> : <HiMenu />}
         </button>
@@ -73,7 +73,7 @@ export default function Header() {
                   <Link
                     href={link.hash}
                     onClick={() => setMenuOpen(false)}
-                    className="w-full text-left hover:text-[#243522] transition font-light font-sans"
+                    className="w-full text-left hover:text-[#cfbdb0] transition font-light font-sans"
                   >
                     {link.name}
                   </Link>
