@@ -47,7 +47,7 @@ export default function Hero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.2 }}
                     >
-                        <h1 className="text-2xl sm:text-3xl font-bold text-[#4d3729] font-poppins leading-snug mb-2">
+                        <h1 className="text-2xl sm:text-3xl font-bold text-stone-800 font-poppins leading-snug mb-2">
                             <Typewriter
                                 words={['Norah Haque']}
                                 loop={1}
@@ -59,7 +59,7 @@ export default function Hero() {
                             delay={40}
                             animateBy="words"
                             direction="top"
-                            className="flex justify-center text-sm text-[#4d3729] font-poppins text-center md:justify-start md:text-left mx-3 md:mx-0"
+                            className="flex justify-center text-sm text-stone-700 font-poppins text-center md:justify-start md:text-left mx-3 md:mx-0"
                         />
                     </motion.div>
 
