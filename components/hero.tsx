@@ -32,7 +32,7 @@ export default function Hero() {
                     whileTap={{ scale: 0.95 }}
                 >
                     <Image
-                        src="/profile.jpeg"
+                        src="/profile2.jpeg"
                         alt="Norah Haque"
                         width={320}
                         height={320}
@@ -55,7 +55,7 @@ export default function Hero() {
                             />
                         </h1>
                         <BlurText
-                            text="I'm a junior at the University of Minnesota studying Computer Science & Management! I care about building tech that matters, with a focus on full-stack development and responsible AI. Outside of code, you'll find me volunteering at my local mosque, out on a run outside, or deep in a book!"
+                            text="I'm a junior at the University of Minnesota studying Computer Science & Management! What has always driven me is building tech that matters, with a focus on full-stack development. Outside of code, you'll find me volunteering at my local mosque, out on a run outside, or deep in a book!"
                             delay={40}
                             animateBy="words"
                             direction="top"

@@ -25,7 +25,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: "Norah | Personal Portfolio",
-  description: "Norah is a computer science student at the University of Minnesota with interests in ML and Full Stack Development.",
+  description: "Norah is a computer science student at the University of Minnesota with interests in ML and Full Stack Development!",
 };
 
 export default function RootLayout({

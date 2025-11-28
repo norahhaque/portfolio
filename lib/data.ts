@@ -4,6 +4,8 @@ import React from "react";
 import { TbBrain } from "react-icons/tb";
 import { GoTelescope } from "react-icons/go";
 import { FaUniversity } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
+
 
 // Navigation links
 export const links = [
@@ -18,6 +20,13 @@ export const links = [
 // Experiences
 export const experiencesData = [
   {
+    title: "Digital and Technology Intern",
+    description:
+      "Incoming Digital and Technology Intern at Ecolab for Summer 2026, where I will be contributing to data-driven product, automation, and technology initiatives across the enterprise.",
+    icon: React.createElement(FaCode),
+    date: "May 2026 - Aug 2026",
+  },
+  {
     title: "Machine Learning TA",
     description:
       "Assisted instruction for UMN's AI Hub summer course by teaching ML fundamentals including supervised learning, LLMs, and neural nets. Led coding sessions using NumPy, scikit-learn, and PyTorch.",
@@ -27,14 +36,14 @@ export const experiencesData = [
   {
     title: "Undergraduate Research Assistant",
     description:
-      "Built Python and SQL scripts for telescope data pipelines. Worked on image processing, automated ingestion, and Git-based version control.",
+      "Developed Python ETL pipelines using Pandas and SQLAlchemy to load telescope data into PostgreSQL. Worked on debugging and optimizing data workflows, integrating the SkyPortal API, and managing collaborative development with Git.",
     icon: React.createElement(GoTelescope),
     date: "Oct 2024 - Present",
   },
   {
     title: "Began Education",
     description:
-      "Studying CS & Management at UMN, with coursework done in machine learning and data structures. I also lead DEI effort with the CSE student board and manage the ACMW website.",
+      "Studying CS & Management at UMN, with coursework done in machine learning, data structures, and operating systems. I also direct DEI efforts with my college's student government and manage the website for my school's chapter of ACM-W.",
     icon: React.createElement(FaUniversity),
     date: "Sep 2024 - Dec 2026",
   },
@@ -68,27 +77,7 @@ export const projectsData = [
     width: 400,
     height: 300,
     link: "https://acmw.umn.edu/",
-  },
-  {
-    title: "Lung Disease Detection",
-    description:
-      "Lung X-ray classifier using PyTorch and scikit-learn with logistic regression, KNN, and a custom neural net for binary and multi-class diagnosis.",
-    tags: ["PyTorch", "Python", "scikit-learn", "NumPy", "Matplotlib"],
-    imageUrl: "/lung-classification.jpg",
-    width: 400,
-    height: 400,
-    link: "https://github.com/norahhaque/lung-disease-detection-ml",
-  },
-  {
-    title: "Spam Message Detection",
-    description:
-      "SMS spam classifier using TF-IDF, PCA, and KNN deployed with a full-stack FastAPI + React interface.",
-    tags: ["Python", "FastAPI", "scikit-learn", "NLTK", "React", "Tailwind CSS"],
-    imageUrl: "/spam_detection.png",
-    width: 400,
-    height: 400,
-    link: "https://spam-detection-puce.vercel.app/",
-  },
+  }
 ] as const;
 
 // Skills
@@ -96,21 +85,51 @@ export const skillsData = {
   Languages: [
     "Python",
     "Java",
-    "C",
     "JavaScript",
     "TypeScript",
+    "C/C++",
     "HTML",
     "CSS",
+    "SQL",
     "Bash",
   ],
 
-  Frontend: ["React", "Next.js", "Tailwind CSS", "NativeWind", "Framer Motion"],
+  Frontend: [
+    "React",
+    "Next.js",
+    "React Native",
+    "Tailwind CSS",
+    "Framer Motion",
+  ],
 
-  Backend: ["Node.js", "Express", "REST APIs", "GraphQL"],
+  Backend: [
+    "Node.js",
+    "Express",
+    "FastAPI",
+    "APIs",
+    "Firebase",
+    "Database Schema Design",
+  ],
 
-  Databases: ["PostgreSQL", "MongoDB", "Firebase Firestore"],
+  Databases: [
+    "PostgreSQL",
+    "Firebase Firestore",
+  ],
 
-  Devops: ["Git", "Docker", "Linux", "CI/CD"],
+  "Data Science": [
+    "PyTorch",
+    "TensorFlow",
+    "scikit-learn",
+    "NumPy",
+    "Pandas",
+    "Matplotlib",
+    "Seaborn",
+  ],
 
-  "Data Science": ["PyTorch", "scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
+  "Design & Prototyping": [
+    "Figma",
+    "Canva",
+    "Wireframing",
+    "UI/UX Design Principles",
+  ],
 } as const;
