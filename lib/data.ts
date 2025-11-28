@@ -4,7 +4,6 @@ import React from "react";
 import { TbBrain } from "react-icons/tb";
 import { GoTelescope } from "react-icons/go";
 import { FaUniversity } from "react-icons/fa";
-import { FaCode } from "react-icons/fa";
 
 
 // Navigation links
@@ -19,13 +18,6 @@ export const links = [
 
 // Experiences
 export const experiencesData = [
-  {
-    title: "Digital and Technology Intern",
-    description:
-      "Incoming Digital and Technology Intern at Ecolab for Summer 2026, where I will be contributing to data-driven product, automation, and technology initiatives across the enterprise.",
-    icon: React.createElement(FaCode),
-    date: "May 2026 - Aug 2026",
-  },
   {
     title: "Machine Learning TA",
     description:
