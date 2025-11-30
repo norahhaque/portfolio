@@ -44,22 +44,39 @@ export const experiencesData = [
 // Projects
 export const projectsData = [
   {
-    title: "SMIC Mobile App [Ongoing]",
+    title: "Muakhah",
     description:
-      "Cross-platform app delivering real-time community events and prayer times, built with React Native, Expo, NativeWind, and Firebase.",
+      "Releasing 1.01.26. More details coming soon.",
     tags: [
-      "React Native",
-      "Expo",
-      "TypeScript",
-      "NativeWind",
-      "Firebase Authentication",
-      "Firestore",
+      "Next.js",
+      "Tailwind CSS",
+      "Neon Postgres",
+      "Drizzle ORM",
+      "GitHub Actions",
+      "Jest + React Testing Library",
     ],
-    imageUrl: "/smicApp.png",
+    imageUrl: "/muakhah.png",
     width: 400,
     height: 400,
-    link: "https://github.com/norahhaque/smic-app",
+    link: "https://muakhah.org/",
   },
+  // {
+  //   title: "SMIC Mobile App [Ongoing]",
+  //   description:
+  //     "Cross-platform app delivering real-time community events and prayer times, built with React Native, Expo, NativeWind, and Firebase.",
+  //   tags: [
+  //     "React Native",
+  //     "Expo",
+  //     "TypeScript",
+  //     "NativeWind",
+  //     "Firebase Authentication",
+  //     "Firestore",
+  //   ],
+  //   imageUrl: "/smicApp.png",
+  //   width: 400,
+  //   height: 400,
+  //   link: "https://github.com/norahhaque/smic-app",
+  // },
   {
     title: "ACMW Chapter Website",
     description:

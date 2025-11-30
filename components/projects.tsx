@@ -4,7 +4,6 @@ import React from "react";
 import SectionHeader from "./section-header";
 import { projectsData } from "@/lib/data";
 import ProjectCard from "./project-card";
-import { motion } from "motion/react";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function Projects() {
@@ -14,7 +13,6 @@ export default function Projects() {
       <SectionHeader
         eyebrow="Ideas in Action"
         title="My Projects"
-        description="These projects helped me grow by transforming ideas into practical solutions through code, ML, and design."
       />
       <div className="flex flex-col items-center gap-8 mt-8">
         {projectsData.map((project, index) => (
