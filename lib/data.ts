@@ -4,7 +4,7 @@ import React from "react";
 import { TbBrain } from "react-icons/tb";
 import { GoTelescope } from "react-icons/go";
 import { FaUniversity } from "react-icons/fa";
-import { FaCode } from "react-icons/fa";
+// import { FaCode } from "react-icons/fa";
 
 
 // Navigation links
