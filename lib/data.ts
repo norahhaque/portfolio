@@ -4,6 +4,7 @@ import React from "react";
 import { TbBrain } from "react-icons/tb";
 import { GoTelescope } from "react-icons/go";
 import { FaUniversity } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
 
 
 // Navigation links
@@ -19,11 +20,18 @@ export const links = [
 // Experiences
 export const experiencesData = [
   {
+    title: "Incoming SWE Intern",
+    description:
+      "Incoming Intern at Ecolab Digital and Technology for Summer 2025, where I will be contributing to data-driven product, automation, and technology initiatives across the enterprise.",
+    icon: React.createElement(FaCode),
+    date: "May 2026 - Aug 2026",
+  },
+  {
     title: "Machine Learning TA",
     description:
       "Assisted instruction for UMN's AI Hub summer course by teaching ML fundamentals including supervised learning, LLMs, and neural nets. Led coding sessions using NumPy, scikit-learn, and PyTorch.",
     icon: React.createElement(TbBrain),
-    date: "May 2025 - Sep 2025",
+    date: "May 2025 - Aug 2025",
   },
   {
     title: "Undergraduate Research Assistant",
@@ -46,7 +54,7 @@ export const projectsData = [
   {
     title: "Muakhah",
     description:
-      "Releasing 1.01.26. More details coming soon.",
+      "Releasing 1.01.26. Working in collaboration with American activist Shaun King, Gould Studios, and an international dev team. More details coming soon.",
     tags: [
       "Next.js",
       "Tailwind CSS",

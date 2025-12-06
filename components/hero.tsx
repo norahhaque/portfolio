@@ -54,13 +54,9 @@ export default function Hero() {
                                 typeSpeed={100}
                             />
                         </h1>
-                        <BlurText
-                            text="I'm a junior at the University of Minnesota studying Computer Science & Management! What has always driven me is building tech that matters, with a focus on full-stack development. Outside of code, you'll find me volunteering at my local mosque, out on a run outside, or deep in a book!"
-                            delay={40}
-                            animateBy="words"
-                            direction="top"
-                            className="flex justify-center text-sm text-stone-700 font-poppins text-center md:justify-start md:text-left mx-3 md:mx-0"
-                        />
+                        <p className="text-sm text-stone-700 font-poppins text-center md:text-left mx-3 md:mx-0">
+                            I'm a junior at the University of Minnesota studying Computer Science & Management! What has always driven me is building tech that matters, with a focus on full-stack development. Outside of code, you'll find me volunteering at my local mosque, out on a run outside, or deep in a book!
+                        </p>
                     </motion.div>
 
                     <motion.div
