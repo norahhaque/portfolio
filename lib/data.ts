@@ -4,7 +4,7 @@ import React from "react";
 import { TbBrain } from "react-icons/tb";
 import { GoTelescope } from "react-icons/go";
 import { FaUniversity } from "react-icons/fa";
-// import { FaCode } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
 
 
 // Navigation links
@@ -19,13 +19,13 @@ export const links = [
 
 // Experiences
 export const experiencesData = [
-  // {
-  //   title: "Incoming SWE Intern",
-  //   description:
-  //     "Incoming Intern at Ecolab Digital and Technology for Summer 2026, where I will be contributing to data-driven product, automation, and technology initiatives across the enterprise.",
-  //   icon: React.createElement(FaCode),
-  //   date: "May 2026 - Aug 2026",
-  // },
+  {
+    title: "Incoming SWE Intern",
+    description:
+      "Incoming Intern at Ecolab Digital and Technology for Summer 2026, where I will be contributing to data-driven product, automation, and technology initiatives across the enterprise.",
+    icon: React.createElement(FaCode),
+    date: "May 2026 - Aug 2026",
+  },
   {
     title: "Machine Learning TA",
     description:
@@ -54,7 +54,7 @@ export const projectsData = [
   {
     title: "Muakhah",
     description:
-      "Releasing 1.01.26. Working in collaboration with American activist Shaun King, Gould Studios, and an international dev team. More details coming soon.",
+      "Releasing 2.17.2026. Working in collaboration with American activist Shaun King, Gould Studios, and an international dev team. More details to come!",
     tags: [
       "Next.js",
       "Tailwind CSS",
