@@ -38,8 +38,8 @@ export default function ProjectCard({
         opacity: opacityProgress,
       }}
     >
-      <section className="bg-[#e3d8cf] sm:max-w-[36rem] max-w-[20rem] border border-black/5 rounded-lg overflow-hidden sm:pr-6 relative transition sm:group-even:pl-6 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-        <div className="w-full bg-[#e3d8cf] pt-3 pb-6 px-4 sm:pl-8 sm:pr-2 sm:pt-8 sm:max-w-[45%] flex flex-col h-full sm:group-even:ml-[15rem]">
+      <section className="bg-[#e3d8cf] sm:max-w-[36rem] max-w-[20rem] border border-black/5 rounded-lg overflow-hidden sm:pr-6 relative transition sm:group-odd:pl-6 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+        <div className="w-full bg-[#e3d8cf] pt-3 pb-6 px-4 sm:pl-8 sm:pr-2 sm:pt-8 sm:max-w-[45%] flex flex-col h-full sm:group-odd:ml-[15rem]">
           <h3 className="text-xl font-semibold text-[#4d3729]">{title}</h3>
           <p className="mt-1.5 mb-3 text-sm leading-relaxed text-[#4d3729]">
             {description}
@@ -78,8 +78,8 @@ export default function ProjectCard({
     block mx-auto h-[14rem] w-full object-cover sm:h-auto sm:w-[22rem]
     sm:absolute sm:block sm:top-14 sm:-right-36 sm:rounded-t-lg sm:shadow-2xl transition
     sm:group-hover:scale-[1.04] sm:group-hover:-translate-x-2.5 sm:group-hover:translate-y-2.5 sm:group-hover:-rotate-2
-    sm:group-even:group-hover:translate-x-2.5 sm:group-even:group-hover:translate-y-2.5 sm:group-even:group-hover:rotate-2
-    sm:group-even:right-[initial] sm:group-even:-left-36
+    sm:group-odd:group-hover:translate-x-2.5 sm:group-odd:group-hover:translate-y-2.5 sm:group-odd:group-hover:rotate-2
+    sm:group-odd:right-[initial] sm:group-odd:-left-36
   "
         />
       </section>

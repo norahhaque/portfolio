@@ -68,6 +68,22 @@ export const projectsData = [
     height: 400,
     link: "https://muakhah.org/",
   },
+  {
+    title: "UMNPray",
+    description:
+      "A web application helping University of Minnesota students discover prayer and reflection spaces on campus as part of the Student Government's broader Wellbeing Project.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Sanity CMS",
+      "GROQ",
+      "Google Maps API",
+    ],
+    imageUrl: "/umnpray.png",
+    width: 400,
+    height: 400,
+    link: "https://umnpray.org/",
+  },
   // {
   //   title: "SMIC Mobile App [Ongoing]",
   //   description:
