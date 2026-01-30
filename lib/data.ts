@@ -29,7 +29,7 @@ export const experiencesData = [
   //   date: "May 2026 - Aug 2026",
   // },
   {
-    title: "SWE Intern @ Bideshi",
+    title: "SWE and UX Intern @ Bideshi",
     description:
     "Contributing to migrating a Shopify Liquid-based platform to a new backend stack, building core functionality, integrating APIs, and reconstructing existing features. Also working with the UX team to implement redesigned interfaces.",
     icon: React.createElement(TiDeviceLaptop),
