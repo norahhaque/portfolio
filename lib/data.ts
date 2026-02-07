@@ -63,7 +63,7 @@ export const projectsData = [
   {
     title: "Muakhah",
     description:
-    "Releasing 2.17.2026. Working in collaboration with American activist Shaun King, Gould Studios, and an international dev team. More details to come!",
+    "Releasing 2.17.2026. Working in collaboration with American activist Shaun King, charity partner Humaniti, Gould Studios, and an international dev team. More details to come!",
     tags: [
       "Next.js",
       "Tailwind CSS",
