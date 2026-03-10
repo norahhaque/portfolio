@@ -31,7 +31,7 @@ export const experiencesData = [
     description:
       "Contributing to migrating a Shopify Liquid-based platform to a new backend stack, building core functionality, integrating APIs, and reconstructing existing features. Also working with the UX team to implement redesigned interfaces.",
     icon: React.createElement(TiDeviceLaptop),
-    date: "May 2026 - Aug 2026",
+    date: "Jan 2026 - May 2026",
   },
   {
     title: "Machine Learning TA",
