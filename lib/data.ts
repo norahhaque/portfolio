@@ -22,7 +22,7 @@ export const experiencesData = [
   // {
   //   title: "Incoming Intern @ Ecolab",
   //   description:
-  //   "Incoming at Ecolab Digital and Technology for Summer 2026, where I will be contributing to data-driven product, automation, and technology initiatives across the enterprise.",
+  //   "Incoming at Ecolab Summer 2026 on the Data and AI Engineering team.",
   //   icon: React.createElement(FaCode),
   //   date: "May 2026 - Aug 2026",
   // },
