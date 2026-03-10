@@ -4,7 +4,7 @@ import React from "react";
 import { TbBrain } from "react-icons/tb";
 import { GoTelescope } from "react-icons/go";
 import { FaUniversity } from "react-icons/fa";
-// import { FaCode } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
 import { TiDeviceLaptop } from "react-icons/ti";
 
 // Navigation links
@@ -19,13 +19,13 @@ export const links = [
 
 // Experiences
 export const experiencesData = [
-  // {
-  //   title: "Incoming Intern @ Ecolab",
-  //   description:
-  //   "Incoming at Ecolab Summer 2026 on the Data and AI Engineering team.",
-  //   icon: React.createElement(FaCode),
-  //   date: "May 2026 - Aug 2026",
-  // },
+  {
+    title: "Incoming Intern @ Ecolab",
+    description:
+      "Incoming at Ecolab Summer 2026 on the Data and AI Engineering team.",
+    icon: React.createElement(FaCode),
+    date: "May 2026 - Aug 2026",
+  },
   {
     title: "SWE and UX Intern @ Bideshi",
     description:
