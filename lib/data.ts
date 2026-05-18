@@ -13,32 +13,18 @@ export const links = [
   { name: "Projects", hash: "#projects" },
   { name: "Skills", hash: "#skills" },
   { name: "Experience", hash: "#experience" },
-  { name: "Hobbies", hash: "#hobbies" },
+  { name: "About", hash: "#about" },
   { name: "Contact", hash: "#contact" },
 ] as const;
 
 // Experiences
 export const experiencesData = [
   {
-    title: "Incoming Intern @ Ecolab",
+    title: "Incoming Data & AI Engineering Intern @ Ecolab",
     description:
-      "Incoming at Ecolab Summer 2026 on the Data and AI Engineering team.",
+      "Joining Ecolab's Data and AI Engineering team for Summer 2026, with a focus on growing in data engineering, backend systems, and enterprise-scale technical workflows.",
     icon: React.createElement(FaCode),
-    date: "May 2026 - Aug 2026",
-  },
-  {
-    title: "SWE and UX Intern @ Bideshi",
-    description:
-      "Contributing to migrating a Shopify Liquid-based platform to a new backend stack, building core functionality, integrating APIs, and reconstructing existing features. Also working with the UX team to implement redesigned interfaces.",
-    icon: React.createElement(TiDeviceLaptop),
-    date: "Jan 2026 - May 2026",
-  },
-  {
-    title: "Machine Learning TA",
-    description:
-      "Assisted instruction for UMN's AI Hub summer course by teaching ML fundamentals including supervised learning, LLMs, and neural nets. Led coding sessions using NumPy, scikit-learn, and PyTorch.",
-    icon: React.createElement(TbBrain),
-    date: "May 2025 - Aug 2025",
+    date: "Summer 2026",
   },
   {
     title: "Undergraduate Research Assistant",
@@ -48,9 +34,23 @@ export const experiencesData = [
     date: "Oct 2024 - Present",
   },
   {
-    title: "Began Education",
+    title: "SWE and UX Intern @ Bideshi",
     description:
-      "Studying CS & Management at UMN, with coursework done in machine learning, data structures, and operating systems. I also direct DEI efforts with my college's student government and manage the website for my school's chapter of ACM-W.",
+      "Contributed to a platform migration from Shopify Liquid to a modern backend stack, including API integrations, core feature reconstruction, transactional email workflows, and redesigned user interfaces.",
+    icon: React.createElement(TiDeviceLaptop),
+    date: "Jan 2026 - May 2026",
+  },
+  {
+    title: "Machine Learning TA",
+    description:
+      "Assisted instruction for UMN's AI Hub summer course by teaching machine learning fundamentals, including supervised learning, LLMs, and neural networks. Led coding sessions using NumPy, scikit-learn, and PyTorch.",
+    icon: React.createElement(TbBrain),
+    date: "May 2025 - Aug 2025",
+  },
+  {
+    title: "B.S. Computer Science @ University of Minnesota",
+    description:
+      "Studying Computer Science with coursework in machine learning, data structures, operating systems, and software engineering. I also direct DEI efforts within CSE student government and manage the website for UMN ACM-W.",
     icon: React.createElement(FaUniversity),
     date: "Sep 2024 - Dec 2026",
   },
@@ -59,26 +59,9 @@ export const experiencesData = [
 // Projects
 export const projectsData = [
   {
-    title: "Muakhah",
-    description:
-      "Releasing this year. Working in collaboration with American activist Shaun King, charity partner Humaniti, Gould Studios, and an international dev team. More details to come!",
-    tags: [
-      "Next.js",
-      "Tailwind CSS",
-      "Neon Postgres",
-      "Drizzle ORM",
-      "GitHub Actions",
-      "Jest + React Testing Library",
-    ],
-    imageUrl: "/muakhah.png",
-    width: 400,
-    height: 400,
-    link: "https://muakhah.org/",
-  },
-  {
     title: "UMNPray",
     description:
-      "A web application helping University of Minnesota students discover prayer and reflection spaces on campus as part of the Student Government's broader Wellbeing Project.",
+      "A web application helping University of Minnesota students discover prayer and reflection spaces on campus as part of Student Government's broader Wellbeing Project. Built with structured location data, a CMS-backed content model, and an interactive map experience.",
     tags: ["Next.js", "TypeScript", "Sanity CMS", "GROQ", "Google Maps API"],
     imageUrl: "/umnpray.png",
     width: 400,
@@ -88,7 +71,7 @@ export const projectsData = [
   {
     title: "Bideshi Site",
     description:
-      "Working as a SWE intern on the site migration for Bideshi, a social media and apparel brand rooted in Bengali heritage.",
+      "A platform migration project for Bideshi, a social media and apparel brand rooted in Bengali heritage. Work includes backend restructuring, API integrations, feature reconstruction, and redesigned user interfaces.",
     tags: [
       "Next.js",
       "Supabase",
@@ -96,34 +79,17 @@ export const projectsData = [
       "Resend",
       "AWS SES",
       "Shopify API",
-      "Github Actions",
+      "GitHub Actions",
     ],
     imageUrl: "/bideshi.png",
     width: 400,
     height: 400,
     link: "https://bideshi.co/",
   },
-  // {
-  //   title: "SMIC Mobile App [Ongoing]",
-  //   description:
-  //     "Cross-platform app delivering real-time community events and prayer times, built with React Native, Expo, NativeWind, and Firebase.",
-  //   tags: [
-  //     "React Native",
-  //     "Expo",
-  //     "TypeScript",
-  //     "NativeWind",
-  //     "Firebase Authentication",
-  //     "Firestore",
-  //   ],
-  //   imageUrl: "/smicApp.png",
-  //   width: 400,
-  //   height: 400,
-  //   link: "https://github.com/norahhaque/smic-app",
-  // },
   {
     title: "ACMW Chapter Website",
     description:
-      "A full-stack web platform for the UMN ACMW chapter. Features interactive community features with modern animations and responsive design.",
+      "A web platform for the UMN ACM-W chapter, built to support chapter information, community-facing content, responsive layouts, and maintainable site updates.",
     tags: ["Next.js", "React", "Tailwind", "TypeScript", "Framer Motion"],
     imageUrl: "/acmWebsite.png",
     width: 400,
@@ -137,47 +103,45 @@ export const skillsData = {
   Languages: [
     "Python",
     "Java",
-    "JavaScript",
     "TypeScript",
+    "JavaScript",
     "C/C++",
-    "HTML",
-    "CSS",
     "SQL",
     "Bash",
+    "HTML",
+    "CSS",
   ],
 
-  Frontend: [
+  "Data & Backend": [
+    "Pandas",
+    "SQLAlchemy",
+    "PostgreSQL",
+    "FastAPI",
+    "Node.js",
+    "Express",
+    "REST APIs",
+    "Database Schema Design",
+  ],
+
+  "Web Development": [
     "React",
     "Next.js",
     "React Native",
     "Tailwind CSS",
-    "Framer Motion",
-  ],
-
-  Backend: [
-    "Node.js",
-    "Express",
-    "FastAPI",
-    "APIs",
-    "Firebase",
-    "Database Schema Design",
     "Supabase",
-    "AWS SES",
+    "Firebase",
   ],
 
-  Databases: ["PostgreSQL", "Vercel"],
-
-  Infrastructure: ["Github Actions"],
-
-  "Data Science": [
+  "Machine Learning": [
+    "scikit-learn",
     "PyTorch",
     "TensorFlow",
-    "scikit-learn",
     "NumPy",
-    "Pandas",
     "Matplotlib",
     "Seaborn",
   ],
+
+  "Infrastructure & Tools": ["Git", "GitHub Actions", "Vercel"],
 
   "Design & Prototyping": [
     "Figma",

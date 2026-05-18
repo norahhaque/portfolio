@@ -55,10 +55,11 @@ export default function Hero() {
             </h1>
             <p className="text-sm text-stone-700 font-poppins text-center md:text-left mx-3 md:mx-0">
               I&apos;m a senior at the University of Minnesota studying Computer
-              Science & Management! What has always driven me is building tech
-              that really matters to me, with a focus on full-stack development.
-              Outside of code, you&apos;ll find me drinking coffee, out on a run
-              outside, or deep in a book!
+              Science! I&apos;ve always been drawn to building tech that feels
+              useful and meaningful, and I&apos;m especially interested in data
+              engineering, backend systems, and the way data moves through real
+              products. Outside of code, you&apos;ll find me drinking coffee,
+              going on a run outside, or deep in a book!
             </p>
           </motion.div>
 
