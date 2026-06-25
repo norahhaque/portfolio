@@ -20,9 +20,8 @@ export const links = [
 // Experiences
 export const experiencesData = [
   {
-    title: "Incoming Data & AI Engineering Intern @ Ecolab",
-    description:
-      "Joining Ecolab's Data and AI Engineering team for Summer 2026, with a focus on growing in data engineering, backend systems, and enterprise-scale technical workflows.",
+    title: "Intern @ Ecolab",
+    description: "On Ecolab's Master Data Management team for Summer 2026.",
     icon: React.createElement(FaCode),
     date: "Summer 2026",
   },
@@ -58,6 +57,23 @@ export const experiencesData = [
 
 // Projects
 export const projectsData = [
+  {
+    title: "Muakhah",
+    description:
+      "Working in collaboration with American activist Shaun King, charity partner Humaniti, Gould Studios, and an international dev team. More details to come!",
+    tags: [
+      "Next.js",
+      "Tailwind CSS",
+      "Neon Postgres",
+      "Drizzle ORM",
+      "GitHub Actions",
+      "Jest + React Testing Library",
+    ],
+    imageUrl: "/muakhah.png",
+    width: 400,
+    height: 400,
+    link: "https://muakhah.org/",
+  },
   {
     title: "UMNPray",
     description:
