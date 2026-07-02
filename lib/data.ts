@@ -3,9 +3,10 @@
 import React from "react";
 import { TbBrain } from "react-icons/tb";
 import { GoTelescope } from "react-icons/go";
-import { FaUniversity } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 import { TiDeviceLaptop } from "react-icons/ti";
+import { FaUniversity } from "react-icons/fa";
+import { BsStars } from "react-icons/bs";
 
 // Navigation links
 export const links = [
@@ -13,7 +14,6 @@ export const links = [
   { name: "Projects", hash: "#projects" },
   { name: "Skills", hash: "#skills" },
   { name: "Experience", hash: "#experience" },
-  { name: "About", hash: "#about" },
   { name: "Contact", hash: "#contact" },
 ] as const;
 
@@ -23,14 +23,14 @@ export const experiencesData = [
     title: "Intern @ Ecolab",
     description: "On Ecolab's Master Data Management team for Summer 2026.",
     icon: React.createElement(FaCode),
-    date: "Summer 2026",
+    date: "June 2026 - June 2027",
   },
   {
-    title: "Undergraduate Research Assistant",
+    title: "Machine Learning Fellow @ Cornell Tech",
     description:
-      "Developed Python ETL pipelines using Pandas and SQLAlchemy to load telescope data into PostgreSQL. Worked on debugging and optimizing data workflows, integrating the SkyPortal API, and managing collaborative development with Git.",
-    icon: React.createElement(GoTelescope),
-    date: "Oct 2024 - Present",
+      "Selected from 3,000+ applicants for the year-long Break Through Tech AI Program in machine learning engineering and applied AI, featuring an industry-partnered project and mentorship from ML engineers.",
+    icon: React.createElement(BsStars),
+    date: "Summer 2026",
   },
   {
     title: "SWE and UX Intern @ Bideshi",
@@ -40,9 +40,16 @@ export const experiencesData = [
     date: "Jan 2026 - May 2026",
   },
   {
+    title: "Undergraduate Research Assistant",
+    description:
+      "Developed Python ETL pipelines using Pandas and SQLAlchemy to load telescope data into PostgreSQL. Worked on debugging and optimizing data workflows, integrating the SkyPortal API, and managing collaborative development with Git.",
+    icon: React.createElement(GoTelescope),
+    date: "Oct 2024 - Oct 2025",
+  },
+  {
     title: "Machine Learning TA",
     description:
-      "Assisted instruction for UMN's AI Hub summer course by teaching machine learning fundamentals, including supervised learning, LLMs, and neural networks. Led coding sessions using NumPy, scikit-learn, and PyTorch.",
+      "Supported PhD-led instruction for 90+ high school students at UMN's AI Hub summer course, demonstrating deep neural networks, CNNs, generative models, transformers, and reinforcement learning using PyTorch, TensorFlow, and scikit-learn.",
     icon: React.createElement(TbBrain),
     date: "May 2025 - Aug 2025",
   },
@@ -119,47 +126,52 @@ export const skillsData = {
   Languages: [
     "Python",
     "Java",
-    "TypeScript",
     "JavaScript",
+    "TypeScript",
     "C/C++",
-    "SQL",
-    "Bash",
     "HTML",
     "CSS",
+    "SQL",
+    "Bash",
   ],
 
-  "Data & Backend": [
-    "Pandas",
-    "SQLAlchemy",
-    "PostgreSQL",
-    "FastAPI",
-    "Node.js",
-    "Express",
-    "REST APIs",
-    "Database Schema Design",
-  ],
-
-  "Web Development": [
+  "Frontend / Frameworks": [
     "React",
     "Next.js",
     "React Native",
-    "Tailwind CSS",
-    "Supabase",
-    "Firebase",
+    "Framer Motion",
   ],
 
-  "Machine Learning": [
-    "scikit-learn",
+  "Backend / APIs": ["Node.js", "Express", "FastAPI", "Firebase", "REST APIs"],
+
+  "Databases / Data Engineering": [
+    "Snowflake",
+    "PostgreSQL",
+    "SQLAlchemy",
+    "Database Schema Design",
+    "ETL Pipelines",
+  ],
+
+  "Data Science / ML": [
     "PyTorch",
     "TensorFlow",
+    "scikit-learn",
     "NumPy",
+    "Pandas",
     "Matplotlib",
     "Seaborn",
   ],
 
-  "Infrastructure & Tools": ["Git", "GitHub Actions", "Vercel"],
+  "DevOps / Tools": [
+    "Git",
+    "GitHub",
+    "Docker",
+    "Linux",
+    "Conda",
+    "GitHub Actions",
+  ],
 
-  "Design & Prototyping": [
+  "Design / Prototyping": [
     "Figma",
     "Canva",
     "Wireframing",

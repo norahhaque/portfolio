@@ -7,7 +7,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare, FaGoodreadsG } from "react-icons/fa";
-import { HiDownload } from "react-icons/hi";
 import { Typewriter } from "react-simple-typewriter";
 
 export default function Hero() {
@@ -35,7 +34,7 @@ export default function Hero() {
           whileTap={{ scale: 0.95 }}
         >
           <Image
-            src="/profile2.jpeg"
+            src="/profile.jpeg"
             alt="Norah Haque"
             width={320}
             height={320}
@@ -56,9 +55,9 @@ export default function Hero() {
             <p className="text-sm text-stone-700 font-poppins text-center md:text-left mx-3 md:mx-0">
               I&apos;m a senior at the University of Minnesota studying Computer
               Science! I&apos;ve always been drawn to building tech that feels
-              meaningful, and I&apos;m especially interested in data engineering
-              and backend systems. Outside of code, you&apos;ll find me trying a
-              new coffee place, going on a run outside, or deep in a book!
+              meaningful, and I&apos;m especially interested in ML and data
+              engineering. Outside of code, you&apos;ll find me trying a new
+              coffee place, going on a run outside, or deep in a book!
             </p>
           </motion.div>
 
@@ -79,15 +78,6 @@ export default function Hero() {
               Contact{" "}
               <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
             </Link>
-
-            <a
-              href="/resume.pdf"
-              className="group bg-white text-[#4d3729] border border-[#8d7863]/30 hover:border-[#8d7863]/60 text-sm px-5 py-2 flex items-center gap-2 rounded-full transition-all duration-200 shadow-sm outline-none focus:scale-110 hover:scale-110 active:scale-105 max-w-[90vw] truncate"
-              download
-            >
-              Resume{" "}
-              <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-            </a>
 
             <a
               href="https://www.linkedin.com/in/norahhaque/"
