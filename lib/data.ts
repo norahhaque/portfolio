@@ -23,14 +23,14 @@ export const experiencesData = [
     title: "Intern @ Ecolab",
     description: "On Ecolab's Master Data Management team for Summer 2026.",
     icon: React.createElement(FaCode),
-    date: "June 2026 - June 2027",
+    date: "Summer 2026",
   },
   {
     title: "Machine Learning Fellow @ Cornell Tech",
     description:
       "Selected from 3,000+ applicants for the year-long Break Through Tech AI Program in machine learning engineering and applied AI, featuring an industry-partnered project and mentorship from ML engineers.",
     icon: React.createElement(BsStars),
-    date: "Summer 2026",
+    date: "June 2026 - June 2027",
   },
   {
     title: "SWE and UX Intern @ Bideshi",
